@@ -30,3 +30,23 @@
         [7] Hello World
 
 */
+#include <stdio.h>
+
+int main(){
+    int input ;
+    int i = 1 ;
+    scanf( "%d", &input) ;
+    if( input % 2 == 1) {
+        while (i <= input) {
+            printf( "[%d] Hello World\n", i ) ;
+            i++ ;
+        }
+    } else {
+        while (i <= input) {
+            printf( "(%d) Hello World\n", i ) ;
+            i++ ;
+        }
+    }
+
+    return 0 ;
+}
